@@ -1,0 +1,15 @@
+{
+  "status_code": 200,
+  "status": true,
+  "message": "institution_calendar list",
+  "data": [
+    {
+      "_id": "629c8a192027d0b0f037b362",
+      "calendar_name": "2022-2023"
+    },
+    {
+      "_id": "60d05e6d8ff3991b21c9bc2c",
+      "calendar_name": "2021-2022"
+    }
+  ]
+}

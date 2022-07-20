@@ -1,0 +1,237 @@
+{
+  "message": "Data retrieved",
+  "data": {
+    "userData": {
+      "_id": "62ce414fed291020e0ff0214",
+      "verification": {
+        "email": false,
+        "password": false,
+        "mobile": false,
+        "profile": {
+          "basicDetails": false,
+          "vaccinationDetails": false
+        },
+        "document": false,
+        "face": false
+      },
+      "isActive": true,
+      "isDeleted": false,
+      "_institution_id": "62c6a8ca8a41877eb77ec47c",
+      "user_type": "staff",
+      "user_id": "001",
+      "email": "bharath@digi.com",
+      "name": {
+        "first": "Bharath",
+        "last": "Parivallal"
+      },
+      "gender": "male"
+    },
+    "labels": {
+      "vaccineDetails": [
+        {
+          "isActive": true,
+          "isMandatory": true,
+          "allowMixedVaccine": false,
+          "_id": "62cd6de77808b1fda02b4838",
+          "categoryName": "test",
+          "vaccineDetails": [
+            {
+              "_id": "62cd6e987808b14c142b4c4d",
+              "vaccineNumber": "122",
+              "vaccineName": "tess",
+              "vaccineType": "sdf",
+              "antigenName": "sdf",
+              "companyName": "23sdf",
+              "brandName": "sdf",
+              "noOfDosage": 1,
+              "noOfBooster": 2,
+              "dosageDetails": [
+                {
+                  "_id": "62cd6e987808b1f7f52b4c4e",
+                  "labelName": "Dose 1",
+                  "days": 14
+                }
+              ],
+              "boosterDetails": [
+                {
+                  "_id": "62cd6e987808b163f82b4c4f",
+                  "labelName": "Booster 1",
+                  "days": 12
+                },
+                {
+                  "_id": "62cd6e987808b107a22b4c50",
+                  "labelName": "Booster 2",
+                  "days": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "isActive": true,
+          "isMandatory": true,
+          "allowMixedVaccine": false,
+          "_id": "62cd6e2b7808b198aa2b486c",
+          "categoryName": "vasf",
+          "vaccineDetails": []
+        }
+      ],
+      "labelDetails": [
+        {
+          "_id": "62c6a9da8a418792787ec53a",
+          "language": "en",
+          "basicDetails": [
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "allowToChange": false,
+              "_id": "62c6a9da8a41873ceb7ec53b",
+              "name": "First Name",
+              "translatedInput": "First"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "allowToChange": false,
+              "_id": "62c6a9da8a41871dc47ec53c",
+              "name": "Middle Name"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "allowToChange": false,
+              "_id": "62c6a9da8a41870e2e7ec53d",
+              "name": "Last Name"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "allowToChange": false,
+              "_id": "62c6a9da8a41878e967ec53e",
+              "name": "Gender"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": true,
+              "allowToChange": true,
+              "_id": "62c6a9da8a4187270e7ec53f",
+              "name": "Phone Number",
+              "defaultValue": "+91"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "allowToChange": false,
+              "_id": "62c6a9da8a4187ba787ec540",
+              "name": "Employee Id"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": true,
+              "allowToChange": false,
+              "_id": "62c6a9da8a4187e6a47ec541",
+              "name": "Email Id"
+            }
+          ],
+          "profileDetails": [
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a418771097ec542",
+              "name": "Passport Number"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a418760167ec543",
+              "name": "Date of Birth"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a418751b77ec544",
+              "name": "Nationality"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a4187a34c7ec545",
+              "name": "National Id"
+            }
+          ],
+          "addressDetails": [
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a41879a0c7ec546",
+              "name": "Building no & Street name"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a41876c707ec547",
+              "name": "Floor Number"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a418758ce7ec548",
+              "name": "Country"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a4187443f7ec549",
+              "name": "District"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a4187cb4a7ec54a",
+              "name": "City"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a418708b47ec54b",
+              "name": "Zipcode"
+            }
+          ],
+          "contactDetails": [
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a4187590c7ec54c",
+              "name": "Office Number"
+            },
+            {
+              "isActive": true,
+              "isMandatory": true,
+              "isCompulsary": false,
+              "_id": "62c6a9da8a41875b1a7ec54d",
+              "name": "Office Extension"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

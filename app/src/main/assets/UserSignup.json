@@ -1,0 +1,21 @@
+{
+  "message": "SIGNED_IN_SUCCESSFULLY",
+  "data": {
+    "verification": {
+      "profile": {
+        "basicDetails": false,
+        "vaccinationDetails": false
+      },
+      "email": true,
+      "password": true,
+      "mobile": false,
+      "document": false,
+      "face": false
+    },
+    "status": "password_confirmed",
+    "isActive": true,
+    "_id": "62ce414fed291020e0ff0214",
+    "user_type": "staff",
+    "password": "$2b$10$37fnnhCZ./fjsUS6/cs2pOFuuX.ZTJhgHu/7ZQuvoGsD/a9TAibnS"
+  }
+}

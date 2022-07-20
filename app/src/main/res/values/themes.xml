@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.NotificationActCompose" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/digi_blue</item>
+    </style>
+
+
+    <style name="Theme.NavigationDrawerCompose" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/digi_blue</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/digi_blue</item>
+    </style>
+
+    <style name="Theme.PocOfDigivalApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.PocOfDigivalApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

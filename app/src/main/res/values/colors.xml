@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#147AFC</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hint_text_color">#666666</color>
+    <color name="tab_selected_color">#1A7BDC</color>
+    <color name="light_grey_color">#EFEFEF</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="digi_txt_color">#333333</color>
+    <color name="digi_red">#ED6161</color>
+    <color name="digi_progress_clr">#11875E</color>
+    <color name="digi_blue">#147AFC</color>
+    <color name="black_87">#DE000000</color>
+    <color name="digi_class_clr">#393939</color>
+
+    <color name="notification_green">#23B916</color>
+    <color name="red">#FF0000</color>
+    <color name="text_color">#333333</color>
+    <color name="loginBlue">#007AFF</color>
+    <color name="black_38">#61000000</color>
+    <color name="black_54">#8A000000</color>
+    <color name="black_6">#0F000000</color>
+
+    <color name="button_color">#147AFC</color>
+    <color name="dark_grey_color">#666666</color>
+    <color name="light_grey_colorr">#6B7280</color>
+    <color name="hint_color">#4B5563</color>
+    <color name="verification_bg">#F3F4F6</color>
+    <color name="divider_bg">#D1D5DB</color>
+    <color name="grey_color_02">#9CA3AF</color>
+    <color name="arrow_color">#323232</color>
+    <color name="box_color">#E5E7EB</color>
+    <color name="box_text_color">#374151</color>
+</resources>

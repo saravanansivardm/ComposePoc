@@ -1,0 +1,1198 @@
+{
+  "status_code": 200,
+  "status": true,
+  "message": "Course list",
+  "data": [
+    {
+      "_id": "60a4e38550e714c73ac9c3a8",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "60a4e1fa50e7140e00c9c38f",
+      "program_name": "Foundation",
+      "course_name": "English for Academic Purposes-1",
+      "course_code": "ENGL101",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "F-G2",
+          "totalSessions": 4,
+          "completedSessions": 1,
+          "pendingSessions": 1,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 3,
+              "completedCount": 0,
+              "pendingCount": 1
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            }
+          ]
+        },
+        {
+          "studentGroupName": "M-G3",
+          "totalSessions": 2,
+          "completedSessions": 1,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            }
+          ]
+        },
+        {
+          "studentGroupName": "F-G1",
+          "totalSessions": 2,
+          "completedSessions": 1,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            }
+          ]
+        },
+        {
+          "studentGroupName": "M-G1",
+          "totalSessions": 1,
+          "completedSessions": 0,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 0,
+              "completedCount": 0,
+              "pendingCount": 0
+            }
+          ]
+        },
+        {
+          "studentGroupName": "M-G2",
+          "totalSessions": 1,
+          "completedSessions": 0,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 0,
+              "completedCount": 0,
+              "pendingCount": 0
+            }
+          ]
+        },
+        {
+          "studentGroupName": "F-G3",
+          "totalSessions": 1,
+          "completedSessions": 0,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 0,
+              "completedCount": 0,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 4,
+      "completedSessions": 1,
+      "attendedSessions": 1,
+      "leaveCount": 0,
+      "absentCount": 0,
+      "warningCount": 0,
+      "warningData": "",
+      "presentCount": 1,
+      "absentPercentage": 0,
+      "subjects": [
+        {
+          "_id": "611a4d308095fca37a7fc4bf",
+          "_subject_id": "60a4e25a50e714f7dac9c39b",
+          "subject_name": "English"
+        }
+      ],
+      "year": "year1",
+      "level": "Level 1",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2021-09-25T00:00:00.000Z",
+      "start_date": "2021-06-20T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "60ed56e0c824f49ff12c6292",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "60ed537fc824f4ec522c6208",
+      "program_name": "Medicine",
+      "course_name": "Fundamentals of Normal Body Functions",
+      "course_code": "BPHYS 203",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 20,
+          "completedSessions": 14,
+          "pendingSessions": 4,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 10,
+              "completedCount": 9,
+              "pendingCount": 1
+            },
+            {
+              "deliveryName": "Tutorial",
+              "totalCount": 3,
+              "completedCount": 0,
+              "pendingCount": 1
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 4,
+              "completedCount": 3,
+              "pendingCount": 1
+            },
+            {
+              "deliveryName": "Directed self learning",
+              "totalCount": 3,
+              "completedCount": 2,
+              "pendingCount": 1
+            }
+          ]
+        },
+        {
+          "studentGroupName": "MG-1",
+          "totalSessions": 13,
+          "completedSessions": 9,
+          "pendingSessions": 2,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 7,
+              "completedCount": 7,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Tutorial",
+              "totalCount": 2,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 2,
+              "completedCount": 1,
+              "pendingCount": 1
+            },
+            {
+              "deliveryName": "Directed self learning",
+              "totalCount": 2,
+              "completedCount": 1,
+              "pendingCount": 1
+            }
+          ]
+        }
+      ],
+      "totalSessions": 39,
+      "completedSessions": 30,
+      "attendedSessions": 15,
+      "leaveCount": 0,
+      "absentCount": 15,
+      "warningCount": 0,
+      "warningData": "Denial",
+      "presentCount": 15,
+      "absentPercentage": 38.46153846153847,
+      "subjects": [
+        {
+          "_id": "6127908bbd27585a711ef27d",
+          "_subject_id": "60ed539ac824f423902c6215",
+          "subject_name": "Physiology"
+        }
+      ],
+      "year": "year2",
+      "level": "Level 3",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2021-10-16T00:00:00.000Z",
+      "start_date": "2021-07-11T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "60a5512accd99b2388bb3b2d",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "60a4e13350e714e7d8c9c380",
+      "program_name": "Dentistry",
+      "course_name": "Body Systems in Health",
+      "course_code": "OBC201",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 0,
+          "completedSessions": 0,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 0,
+              "completedCount": 0,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 0,
+      "completedSessions": 0,
+      "attendedSessions": 0,
+      "leaveCount": 0,
+      "absentCount": 0,
+      "warningCount": 0,
+      "warningData": "",
+      "presentCount": 0,
+      "absentPercentage": null,
+      "subjects": [
+        {
+          "_id": "613f433d1c27fd45c9c4c989",
+          "_subject_id": "60a4f0b650e7147dabc9cbbf",
+          "subject_name": "Physiology - Bio-physiology"
+        }
+      ],
+      "year": "year2",
+      "level": "Level 3",
+      "term": "regular",
+      "isActive": false,
+      "rotation": "no",
+      "end_date": "2021-11-06T00:00:00.000Z",
+      "start_date": "2021-06-20T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "60a5f625ccd99bb9c3bb43fd",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "60a4e13350e714e7d8c9c380",
+      "program_name": "Dentistry",
+      "course_name": "Clinical Endodontics",
+      "course_code": "CDS421",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 36,
+          "completedSessions": 24,
+          "pendingSessions": 1,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 8,
+              "completedCount": 8,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 11,
+              "completedCount": 6,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Clinical case based Learning",
+              "totalCount": 17,
+              "completedCount": 10,
+              "pendingCount": 1
+            }
+          ]
+        },
+        {
+          "studentGroupName": "MG-1",
+          "totalSessions": 3,
+          "completedSessions": 1,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Clinical case based Learning",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 46,
+      "completedSessions": 34,
+      "attendedSessions": 22,
+      "leaveCount": 0,
+      "absentCount": 12,
+      "warningCount": 0,
+      "warningData": "Denial",
+      "presentCount": 22,
+      "absentPercentage": 26.08695652173913,
+      "subjects": [
+        {
+          "_id": "614f3e9427d0f063186ba205",
+          "_subject_id": "60a4f0a550e714d73dc9cbad",
+          "subject_name": "Endodontics"
+        }
+      ],
+      "year": "year5",
+      "level": "Level 9",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2022-03-26T00:00:00.000Z",
+      "start_date": "2021-06-20T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "61a5d148ff66235718b5fcbc",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "61a5cbf7ff66233ce5b5fa6b",
+      "program_name": "BOT",
+      "course_name": "Organizational psychology",
+      "course_code": "BOT002",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 39,
+          "completedSessions": 32,
+          "pendingSessions": 1,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 14,
+              "completedCount": 10,
+              "pendingCount": 1
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 17,
+              "completedCount": 15,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Directed self learning",
+              "totalCount": 8,
+              "completedCount": 7,
+              "pendingCount": 0
+            }
+          ]
+        },
+        {
+          "studentGroupName": "MG-1",
+          "totalSessions": 1,
+          "completedSessions": 0,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 0,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Directed self learning",
+              "totalCount": 0,
+              "completedCount": 0,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 41,
+      "completedSessions": 34,
+      "attendedSessions": 11,
+      "leaveCount": 0,
+      "absentCount": 23,
+      "warningCount": 0,
+      "warningData": "Denial",
+      "presentCount": 11,
+      "absentPercentage": 56.09756097560976,
+      "subjects": [
+        {
+          "_id": "61a600b8b1723a189c346696",
+          "_subject_id": "61a5ce93ff6623c0e8b5fac8",
+          "subject_name": "Occupational therapy."
+        }
+      ],
+      "year": "year2",
+      "level": "Level 4",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2022-05-26T00:00:00.000Z",
+      "start_date": "2022-03-06T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "61aafd15273e7d4540c14395",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "61a9f19bb1ed1a405784be5d",
+      "program_name": "medicine66",
+      "course_name": "Immune, Blood and Lymphatic System",
+      "course_code": "SIBLS 305",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 2,
+          "completedSessions": 0,
+          "pendingSessions": 1,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Seminar",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 1
+            }
+          ]
+        }
+      ],
+      "totalSessions": 2,
+      "completedSessions": 0,
+      "attendedSessions": 0,
+      "leaveCount": 0,
+      "absentCount": 0,
+      "warningCount": 0,
+      "warningData": "",
+      "presentCount": 0,
+      "absentPercentage": 0,
+      "subjects": [
+        {
+          "_id": "61b490adc05a81a3befd6152",
+          "_subject_id": "61a9f1b2b1ed1a0db884be7c",
+          "subject_name": "Clinical Pathology"
+        }
+      ],
+      "year": "year3",
+      "level": "Level 5",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2022-02-19T00:00:00.000Z",
+      "start_date": "2021-11-07T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "60ed56e0c824f476002c627c",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "60ed537fc824f4ec522c6208",
+      "program_name": "Medicine",
+      "course_name": "Basic human anatomy1",
+      "course_code": "ANAT 2031",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 33,
+          "completedSessions": 3,
+          "pendingSessions": 30,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 28,
+              "completedCount": 2,
+              "pendingCount": 26
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 5,
+              "completedCount": 1,
+              "pendingCount": 4
+            }
+          ]
+        },
+        {
+          "studentGroupName": "MG-1",
+          "totalSessions": 2,
+          "completedSessions": 2,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 33,
+      "completedSessions": 3,
+      "attendedSessions": 0,
+      "leaveCount": 0,
+      "absentCount": 3,
+      "warningCount": 0,
+      "warningData": "",
+      "presentCount": 0,
+      "absentPercentage": 9.090909090909092,
+      "subjects": [
+        {
+          "_id": "61c5d6e3d5707190a74c19de",
+          "_subject_id": "60ed539ac824f404cc2c620b",
+          "subject_name": "Anatomy"
+        }
+      ],
+      "year": "year2",
+      "level": "Level 3",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2021-10-16T00:00:00.000Z",
+      "start_date": "2021-07-11T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "61bf5c8320a25e627e215c0f",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "61bf55d520a25e657021589a",
+      "program_name": "medicine88",
+      "course_name": "Respiratory System",
+      "course_code": "ZRES 305",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "MG-1",
+          "totalSessions": 3,
+          "completedSessions": 0,
+          "pendingSessions": 1,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Directed self learning",
+              "totalCount": 2,
+              "completedCount": 0,
+              "pendingCount": 1
+            }
+          ]
+        },
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 3,
+          "completedSessions": 0,
+          "pendingSessions": 1,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Directed self learning",
+              "totalCount": 2,
+              "completedCount": 0,
+              "pendingCount": 1
+            }
+          ]
+        }
+      ],
+      "totalSessions": 3,
+      "completedSessions": 0,
+      "attendedSessions": 0,
+      "leaveCount": 0,
+      "absentCount": 0,
+      "warningCount": 0,
+      "warningData": "",
+      "presentCount": 0,
+      "absentPercentage": 0,
+      "subjects": [
+        {
+          "_id": "61d0547666e9c14b14aacf92",
+          "_subject_id": "61bf55e920a25edf722158ad",
+          "subject_name": "Anatomy"
+        }
+      ],
+      "year": "year3",
+      "level": "Level 5",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2022-04-23T00:00:00.000Z",
+      "start_date": "2021-12-26T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "60a5f625ccd99bb27ebb4466",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "60a4e13350e714e7d8c9c380",
+      "program_name": "Dentistry",
+      "course_name": "Clinical oral surgery",
+      "course_code": "OSRG411",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 1,
+          "completedSessions": 0,
+          "pendingSessions": 1,
+          "courseSessions": [
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 1
+            }
+          ]
+        }
+      ],
+      "totalSessions": 1,
+      "completedSessions": 0,
+      "attendedSessions": 0,
+      "leaveCount": 0,
+      "absentCount": 0,
+      "warningCount": 0,
+      "warningData": "",
+      "presentCount": 0,
+      "absentPercentage": 0,
+      "subjects": [
+        {
+          "_id": "61d3276eb1ca037565d80c29",
+          "_subject_id": "60a4f0a550e714cd5dc9cbb0",
+          "subject_name": "Oral surgery"
+        }
+      ],
+      "year": "year5",
+      "level": "Level 9",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2021-11-06T00:00:00.000Z",
+      "start_date": "2021-06-20T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "61e660d8c6bf196472ad4234",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "61e54dd57e6cd4544eb6e722",
+      "program_name": "Engineering",
+      "course_name": "Database management systems",
+      "course_code": "CS6302",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "MG-1",
+          "totalSessions": 1,
+          "completedSessions": 1,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            }
+          ]
+        },
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 1,
+          "completedSessions": 1,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 1,
+      "completedSessions": 1,
+      "attendedSessions": 0,
+      "leaveCount": 0,
+      "absentCount": 1,
+      "warningCount": 0,
+      "warningData": "Denial",
+      "presentCount": 0,
+      "absentPercentage": 100,
+      "subjects": [
+        {
+          "_id": "61e9210774c1f61c42ca7bd8",
+          "_subject_id": "61e54e397e6cd47f26b6e7d5",
+          "subject_name": "D1"
+        }
+      ],
+      "year": "year2",
+      "level": "Level 4",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2022-04-14T00:00:00.000Z",
+      "start_date": "2021-12-19T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "61a5d070ff6623bcd8b5fc2b",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "61a5cbf7ff66233ce5b5fa6b",
+      "program_name": "BOT",
+      "course_name": "Pharmacology",
+      "course_code": "BOT001",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 14,
+          "completedSessions": 11,
+          "pendingSessions": 2,
+          "courseSessions": [
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 5,
+              "completedCount": 3,
+              "pendingCount": 2
+            },
+            {
+              "deliveryName": "Directed self learning",
+              "totalCount": 2,
+              "completedCount": 2,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 7,
+              "completedCount": 6,
+              "pendingCount": 0
+            }
+          ]
+        },
+        {
+          "studentGroupName": "MG-1",
+          "totalSessions": 1,
+          "completedSessions": 1,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Directed self learning",
+              "totalCount": 0,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 0,
+              "completedCount": 0,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 18,
+      "completedSessions": 15,
+      "attendedSessions": 11,
+      "leaveCount": 0,
+      "absentCount": 4,
+      "warningCount": 0,
+      "warningData": "Final Warning",
+      "presentCount": 11,
+      "absentPercentage": 22.22222222222222,
+      "subjects": [
+        {
+          "_id": "61ee691f8a70e85e761da9e6",
+          "_subject_id": "61a5ce93ff662310d7b5fac6",
+          "subject_name": "Anatomy"
+        }
+      ],
+      "year": "year2",
+      "level": "Level 3",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2022-02-24T00:00:00.000Z",
+      "start_date": "2021-11-28T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "61a5d070ff6623bcd8b5fc2b",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "61a5cbf7ff66233ce5b5fa6b",
+      "program_name": "BOT",
+      "course_name": "Pharmacology",
+      "course_code": "BOT001",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 2,
+          "completedSessions": 2,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 0,
+              "completedCount": 0,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Laboratory practical session",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Directed self learning",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 4,
+      "completedSessions": 4,
+      "attendedSessions": 1,
+      "leaveCount": 0,
+      "absentCount": 3,
+      "warningCount": 0,
+      "warningData": "Denial",
+      "presentCount": 1,
+      "absentPercentage": 75,
+      "subjects": [
+        {
+          "_id": "6262d215060a7593142aee4e",
+          "_subject_id": "61a5ce93ff662310d7b5fac6",
+          "subject_name": "Anatomy"
+        }
+      ],
+      "year": "year2",
+      "level": "Level 3",
+      "term": "interim",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2022-05-26T00:00:00.000Z",
+      "start_date": "2022-03-06T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "61e655aec6bf19da21ad330a",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "61e54dd57e6cd4544eb6e722",
+      "program_name": "Engineering",
+      "course_name": "Technical english-1",
+      "course_code": "HS6151",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 1,
+          "completedSessions": 1,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Online lecture",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 1,
+      "completedSessions": 1,
+      "attendedSessions": 0,
+      "leaveCount": 0,
+      "absentCount": 1,
+      "warningCount": 0,
+      "warningData": "Denial",
+      "presentCount": 0,
+      "absentPercentage": 100,
+      "subjects": [
+        {
+          "_id": "61e7f500085c618b58ad7ae2",
+          "_subject_id": "61e54e397e6cd40e28b6e7d2",
+          "subject_name": "A1"
+        }
+      ],
+      "year": "year1",
+      "level": "Level 1",
+      "term": "interim",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2022-04-14T00:00:00.000Z",
+      "start_date": "2022-01-02T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "61e65298c6bf1959f1ad2dd1",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "61d56ea63935676747a12ebd",
+      "program_name": "Nursing321",
+      "course_name": "Clinical nutrition",
+      "course_code": "NUR322",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "MG-1",
+          "totalSessions": 1,
+          "completedSessions": 1,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            }
+          ]
+        },
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 1,
+          "completedSessions": 1,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive lecture",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 1,
+      "completedSessions": 1,
+      "attendedSessions": 0,
+      "leaveCount": 1,
+      "absentCount": 0,
+      "warningCount": 1,
+      "warningData": "Denial",
+      "presentCount": 0,
+      "absentPercentage": 0,
+      "subjects": [
+        {
+          "_id": "620b83da3db2c37253bd646f",
+          "_subject_id": "61d57270393567eec9a131a4",
+          "subject_name": "Child health nursing"
+        }
+      ],
+      "year": "year3",
+      "level": "Level 5",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2022-03-31T00:00:00.000Z",
+      "start_date": "2022-01-02T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "60a50e8f48e026edc6b9faa5",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "60a4e13350e71413f7c9c385",
+      "program_name": "Nursing",
+      "course_name": "Biochemistry",
+      "course_code": "CHS262",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 1,
+          "completedSessions": 0,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive Lecture",
+              "totalCount": 1,
+              "completedCount": 0,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 1,
+      "completedSessions": 0,
+      "attendedSessions": 0,
+      "leaveCount": 0,
+      "absentCount": 0,
+      "warningCount": 0,
+      "warningData": "",
+      "presentCount": 0,
+      "absentPercentage": 0,
+      "subjects": [
+        {
+          "_id": "620cc7ae669ba3105755af03",
+          "_subject_id": "60a4f0b650e7142be8c9cbc0",
+          "subject_name": "Biochemistry"
+        }
+      ],
+      "year": "year2",
+      "level": "Level 3",
+      "term": "interim",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2022-04-02T00:00:00.000Z",
+      "start_date": "2021-12-26T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "6211df685f8d2af2fd37a4f1",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "6211cfa05f8d2a8a7237a0e3",
+      "program_name": "اضف جديد نوع التوصيل",
+      "course_name": "اسم الدورة التدريبية",
+      "course_code": "رمز المقرر",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "FG-1",
+          "totalSessions": 3,
+          "completedSessions": 3,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "اضف جديد نوع التوصي",
+              "totalCount": 3,
+              "completedCount": 3,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 3,
+      "completedSessions": 3,
+      "attendedSessions": 2,
+      "leaveCount": 0,
+      "absentCount": 1,
+      "warningCount": 0,
+      "warningData": "Denial",
+      "presentCount": 2,
+      "absentPercentage": 33.33333333333333,
+      "subjects": [
+        {
+          "_id": "625fff47836ad9f267ee90be",
+          "_subject_id": "6211d33b5f8d2a656437a21b",
+          "subject_name": "اضف جديد قسم"
+        }
+      ],
+      "year": "year2",
+      "level": "Level 3",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "no",
+      "end_date": "2022-05-05T00:00:00.000Z",
+      "start_date": "2022-04-10T00:00:00.000Z",
+      "course_type": "standard"
+    },
+    {
+      "_id": "61b1c060c138a311aba5d6fa",
+      "_institution_calendar_id": "60d05e6d8ff3991b21c9bc2c",
+      "_program_id": "61b1b9b4c138a3bf2da5cea6",
+      "program_name": "Medicine Activity3",
+      "course_name": "Surgery",
+      "course_code": "AZSURG633",
+      "courseSessionDetails": [
+        {
+          "studentGroupName": "F-RG3",
+          "totalSessions": 2,
+          "completedSessions": 2,
+          "pendingSessions": 0,
+          "courseSessions": [
+            {
+              "deliveryName": "Interactive Lecture",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            },
+            {
+              "deliveryName": "Tutorial",
+              "totalCount": 1,
+              "completedCount": 1,
+              "pendingCount": 0
+            }
+          ]
+        }
+      ],
+      "totalSessions": 2,
+      "completedSessions": 2,
+      "attendedSessions": 2,
+      "leaveCount": 0,
+      "absentCount": 0,
+      "warningCount": 0,
+      "warningData": "",
+      "presentCount": 2,
+      "absentPercentage": 0,
+      "subjects": [
+        {
+          "_id": "6296fb54562ce019fde068df",
+          "_subject_id": "61b1bd85c138a3bac2a5d1ef",
+          "subject_name": "Surgery"
+        }
+      ],
+      "year": "year6",
+      "level": "Level 10",
+      "term": "regular",
+      "isActive": true,
+      "rotation": "yes",
+      "end_date": "2022-02-24T00:00:00.000Z",
+      "start_date": "2021-12-05T00:00:00.000Z",
+      "rotation_count": 3,
+      "course_type": "standard"
+    }
+  ]
+}
