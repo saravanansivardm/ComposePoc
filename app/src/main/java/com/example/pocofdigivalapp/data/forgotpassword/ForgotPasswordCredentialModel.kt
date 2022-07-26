@@ -9,5 +9,4 @@ data class ForgotPasswordCredentialModel(
     val setMode: String?,
     @SerializedName("newPassword")
     val newPassword: String?,
-) {
-}
+)

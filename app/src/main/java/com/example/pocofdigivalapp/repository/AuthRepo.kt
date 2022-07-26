@@ -80,7 +80,7 @@ class AuthRepo(private val context: Context) {
         )
     }
 
-    fun getBasicDetailUpdate(): CustomResponse<BasicDetailsUpdateResponse, String> {
+    fun getBasicDetailUpdate(basicDetailscredentials: Any?): CustomResponse<BasicDetailsUpdateResponse, String> {
         return CustomResponse.Success(
             Gson().fromJson(
                 context.assets.open("BasicDetailUpdate.json").reader(),

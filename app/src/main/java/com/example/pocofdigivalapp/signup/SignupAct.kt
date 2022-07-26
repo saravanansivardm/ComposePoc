@@ -7,7 +7,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class SignupAct : ComponentActivity() {
-    private val viewModel: SignUpViewModel by viewModel()
+    private val viewModel: SignUpViewModelLatest by viewModel()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {

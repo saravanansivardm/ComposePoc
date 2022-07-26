@@ -1,14 +1,14 @@
-package com.example.pocofdigivalapp.data.forgotpassword
+package com.example.pocofdigivalapp.data
 
 import com.google.gson.annotations.SerializedName
 
-data class ForgotPasswordResponse(
+data class CommonApiError(
     @SerializedName("status_code")
-    val statusCode: Int,
+    val statusCode: Int?,
     @SerializedName("status")
-    val status: Boolean,
+    val status: Boolean?,
     @SerializedName("message")
     val message: String?,
     @SerializedName("data")
-    val data: Data?
+    val data: List<List<String?>>,
 )

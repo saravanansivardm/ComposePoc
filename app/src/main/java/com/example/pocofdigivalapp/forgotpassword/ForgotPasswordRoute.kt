@@ -5,10 +5,10 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 
 @Composable
-fun ForgotPasswordRoute(viewModel: ForgotPasswordViewModel) {
+fun ForgotPasswordRoute(viewModel: ForgotPasswordViewModelLatest) {
     val uiState by viewModel.forgotPasswordUiState.collectAsState()
     when (uiState) {
-        is ForgotPasswordState.Ideal -> {
+        is ForgotPasswordStateLatest.Ideal -> {
             ForgotPasswordScreen(
                 newPassword = viewModel.newPassword,
                 onPasswordChanged = { viewModel.onPasswordEntered(it) },
@@ -19,7 +19,7 @@ fun ForgotPasswordRoute(viewModel: ForgotPasswordViewModel) {
                 requestInProgress = false,
             )
         }
-        is ForgotPasswordState.Loading -> {
+        is ForgotPasswordStateLatest.Loading -> {
             ForgotPasswordScreen(
                 newPassword = viewModel.newPassword,
                 onPasswordChanged = { viewModel.onPasswordEntered(it) },
