@@ -5,28 +5,28 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 
 @Composable
-fun SignupRoute(viewModel: SignUpViewModel) {
+fun SignupRoute(viewModel: SignUpViewModelLatest) {
     val uiState by viewModel.uiState.collectAsState()
     when (uiState) {
-        is LoginState.Ideal -> {
+        is SignUpState.Ideal -> {
             SignupScreen(
                 email = viewModel.email,
                 onEmailChanged = { viewModel.onEmailEntered(it) },
                 password = viewModel.password,
                 onPasswordChanged = { viewModel.onPasswordEntered(it) },
                 onButtonClick = { viewModel.onSubmitClicked() },
-                onForgotPasswordClick = { viewModel.goToLogin() },
+//                onForgotPasswordClick = { viewModel.goToLogin() },
                 requestInProgress = false,
             )
         }
-        is LoginState.Loading -> {
+        is SignUpState.Loading -> {
             SignupScreen(
                 email = viewModel.email,
                 onEmailChanged = { viewModel.onEmailEntered(it) },
                 password = viewModel.password,
                 onPasswordChanged = { viewModel.onPasswordEntered(it) },
                 onButtonClick = { viewModel.onSubmitClicked() },
-                onForgotPasswordClick = { viewModel.goToLogin() },
+//                onForgotPasswordClick = { viewModel.goToLogin() },
                 requestInProgress = true,
             )
         }

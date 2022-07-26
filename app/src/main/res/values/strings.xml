@@ -158,4 +158,10 @@
     <string name="office_extension">Office Extension</string>
     <string name="enter_office_no">Enter Office Number</string>
     <string name="enter_office_extension">Enter Office Extension</string>
+
+    <string name="no_network_connection">No network connection</string>
+    <string name="you_are_online">You\'re online</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="server_error">Server Error</string>
+    <string name="something_times">Time out !</string>
 </resources>

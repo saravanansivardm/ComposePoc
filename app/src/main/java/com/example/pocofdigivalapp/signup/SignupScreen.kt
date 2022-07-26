@@ -54,7 +54,7 @@ fun SignupScreenPreview() {
         password = "",
         onPasswordChanged = {},
         onButtonClick = {},
-        onForgotPasswordClick = {},
+//        onForgotPasswordClick = {},
         requestInProgress = true
     )
 }
@@ -67,7 +67,7 @@ fun SignupScreen(
     password: String,
     onPasswordChanged: (String) -> Unit,
     onButtonClick: () -> Unit,
-    onForgotPasswordClick: () -> Unit,
+//    onForgotPasswordClick: () -> Unit,
     requestInProgress: Boolean,
 ) {
     val scrollState = rememberScrollState()
