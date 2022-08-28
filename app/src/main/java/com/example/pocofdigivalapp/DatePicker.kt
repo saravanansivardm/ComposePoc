@@ -3,6 +3,7 @@ package com.example.pocofdigivalapp
 import android.app.DatePickerDialog
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.widget.DatePicker
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -48,6 +49,7 @@ fun showDatePicker(context: Context) {
         }, year, month, day
     )
 
+    Log.e("Selected Date : ", date.value)
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,

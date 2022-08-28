@@ -1,4 +1,4 @@
-package com.example.pocofdigivalapp.profile
+package com.example.pocofdigivalapp.profile.basicdetails
 
 import android.util.Log
 import androidx.compose.runtime.MutableState
@@ -6,10 +6,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.pocofdigivalapp.CourseListState
+import com.example.pocofdigivalapp.R
 import com.example.pocofdigivalapp.api.CustomResponse
 import com.example.pocofdigivalapp.data.basicdetailupdate.*
 import com.example.pocofdigivalapp.data.userdetailsget.BasicDetail
 import com.example.pocofdigivalapp.repository.AuthRepo
+import com.example.pocofdigivalapp.utils.rawString
+import com.example.pocofdigivalapp.utils.resourceString
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
@@ -38,14 +41,23 @@ class ProfileScreenViewModel(private val authRepo: AuthRepo) : ViewModel() {
             when (val response = authRepo.getUserDetails()) {
                 is CustomResponse.Success -> {
                     basicDetails.addAll(response.data.data.labels.labelDetails[0].basicDetails)
+//                    Log.e("bbbb_logg", basicDetails.toString())
                     val basicDetailMap = mutableMapOf<String, String>()
+                    val basicDetailsIsActiveMap = mutableMapOf<String, String>()
                     basicDetails.forEach { basicDetail ->
                         basicDetailMap.put(basicDetail.name, "")
+                    }
+                    basicDetails.forEach { basicDetailActive ->
+//                        Log.e("_id_log", basicDetailActive.id)
+//                        Log.e("_name_log", basicDetailActive.name)
+//                        Log.e("_isActive_log", basicDetailActive.isActive.toString())
+                        basicDetailsIsActiveMap.put(basicDetailActive.isActive.toString(), "")
                     }
                     viewModelState.update {
                         it.copy(
                             isLoading = false,
-                            basicDetailsMap = basicDetailMap
+                            basicDetailsMap = basicDetailMap,
+                            basicDetailsIsActiveMap = basicDetailsIsActiveMap,
                         )
                     }
                 }
@@ -67,81 +79,39 @@ class ProfileScreenViewModel(private val authRepo: AuthRepo) : ViewModel() {
         cacheBasicDetailsMap = map
     }
 
+    private fun validateInputFields(): Pair<Boolean, Int?> {
+        var position: Int?
+        Log.e("cacheBasicDetailsMap_log", cacheBasicDetailsMap.values.toString())
+        cacheBasicDetailsMap.values.forEachIndexed { index, item ->
+            if (item.isBlank() || item.isEmpty()) {
+                position = index
+                return false to position
+            }
+        }
+        return true to null
+    }
+
     fun onSubmitClicked() {
-        Log.e("onSubmitClicked_log", cacheBasicDetailsMap.values.toString())
-        val basicDetailKeyList = arrayListOf<String>()
-        basicDetailKeyList.addAll(cacheBasicDetailsMap.values)
-        if (basicDetailKeyList.isEmpty()) {
-
-        }
-
-        /*cacheBasicDetailsMap.values.forEachIndexed { index, item ->
-            if (basicDetailKeyList.isEmpty()) {
-                Log.e("list_empty_log", "empty")
-            } else if (index == 0 && item.isEmpty()) {
-                Log.e("first_name_empty_log", "empty")
-                viewModelState.update {
-                    it.copy(
-                        isError = true
-                    )
-                }
-            } else if (index == 1 && item.isEmpty()) {
-                Log.e("middle_name_empty_log", "empty")
-            } else if (index == 2 && item.isEmpty()) {
-                Log.e("last_name_empty_log", "empty")
-            } else if (index == 3 && item.isEmpty()) {
-                Log.e("gender_empty_log", "empty")
-            } else if (index == 4 && item.isEmpty()) {
-                Log.e("phone_number_empty_log", "empty")
-            } else if (index == 5 && item.isEmpty()) {
-                Log.e("emp_id_empty_log", "empty")
-            } else if (index == 6 && item.isEmpty()) {
-                Log.e("email_id_empty_log", "empty")
-            } else {
-            }
-        }*/
-
-        viewModelScope.launch {
-            _myCourseListState.value = CourseListState.Loading
-            val email = cacheBasicDetailsMap["Email Id"]
-            val gender = cacheBasicDetailsMap["Gender"]
-            val firstName = cacheBasicDetailsMap["First Name"]
-            val middleName = cacheBasicDetailsMap["Middle Name"]
-            val lastName = cacheBasicDetailsMap["Last Name"]
-            val countryCode = cacheBasicDetailsMap["+91"]
-            val mobileNumber = cacheBasicDetailsMap["Phone Number"]
-            val basicDetailsMobile =
-                BasicDetailsMobile(code = "+91", no = mobileNumber.toString())
-            val basicDetailsName = BasicDetailsName(firstName, middleName, lastName, "family")
-            Log.e("basicDetailsMobile_logg", basicDetailsMobile.toString())
-            Log.e("basicDetailsName_logg", basicDetailsName.toString())
-
-            when (val response = authRepo.getBasicDetailUpdate(
-                getBasicDetailsCredentials(
-                    email = email,
-                    name = basicDetailsName,
-                    gender = gender,
-                    mobile = basicDetailsMobile
+        val value = validateInputFields()
+        Log.e("first_log", value.first.toString())
+        Log.e("second_log", value.second.toString())
+        if (!value.first || cacheBasicDetailsMap.values.isEmpty()) {
+            viewModelState.update {
+                it.copy(
+                    position = value.second ?: 0,
                 )
-            )) {
-//            when (val response = authRepo.getBasicDetailUpdate()) {
-                is CustomResponse.Success -> {
-                    cachedProfileDetailsUpdateList = listOf(response.data)
-                    Log.e(
-                        "cachedProfileDetailsUpdateList_logg",
-                        cachedProfileDetailsUpdateList.get(0).message
-                    )
-                    viewModelState.update {
-                        it.copy(
-                            isLoading = true,
-                        )
-                    }
-                }
-                is CustomResponse.Failure -> {
-                    _myCourseListState.value = CourseListState.Failed(response.error)
-                }
             }
+        } else {
+            Log.e("sfkk_log", "true")
         }
+    }
+
+    private fun onErrorFound(message: String) {
+        viewModelState.update { it.copy(isLoading = false) }
+        val value = if (message.isEmpty()) resourceString(R.string.provide_valid_credentials)
+        else rawString(message)
+        Log.e("error_value", value.toString())
+//        setMessage(value)
     }
 
     private fun getBasicDetailsCredentials(
@@ -164,16 +134,18 @@ class ProfileScreenViewModel(private val authRepo: AuthRepo) : ViewModel() {
 
 data class ProfileViewModelState(
     val isLoading: Boolean? = false,
-    val isError: Boolean? = false,
+    val position: Int? = null,
     val basicDetailsMap: MutableMap<String, String> = mutableMapOf(),
+    val basicDetailsIsActiveMap: MutableMap<String, String> = mutableMapOf(),
     val lastUpdated: Long = System.currentTimeMillis(),
 ) {
     fun toUiState() =
         ProfileUiState(
             isLoading = isLoading,
             basicDetailsMap = basicDetailsMap,
+            basicDetailsIsActiveMap = basicDetailsIsActiveMap,
             lastUpdated = lastUpdated,
-            isError = isError,
+            position = position,
         )
 }
 
@@ -181,6 +153,7 @@ data class ProfileViewModelState(
 data class ProfileUiState(
     val isLoading: Boolean?,
     val basicDetailsMap: MutableMap<String, String>,
+    val basicDetailsIsActiveMap: MutableMap<String, String> = mutableMapOf(),
     val lastUpdated: Long,
-    val isError: Boolean? = false,
+    val position: Int?,
 )

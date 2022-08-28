@@ -9,9 +9,6 @@ import androidx.lifecycle.viewModelScope
 import com.example.pocofdigivalapp.R
 import com.example.pocofdigivalapp.data.forgotpassword.ForgotPasswordCredentialModel
 import com.example.pocofdigivalapp.data.forgotpassword.ForgotPasswordResponse
-import com.example.pocofdigivalapp.data.signup.CredentialModel
-import com.example.pocofdigivalapp.data.signup.SignupResponse
-import com.example.pocofdigivalapp.repository.AuthRepo
 import com.example.pocofdigivalapp.repository.NewAuthRepository
 import com.example.pocofdigivalapp.utils.*
 import kotlinx.coroutines.flow.*

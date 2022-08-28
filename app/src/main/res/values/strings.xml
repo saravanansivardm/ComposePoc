@@ -55,6 +55,8 @@
     <string name="course_coordinator">Admin Courses</string>
     <string name="calendar">Calendar</string>
     <string name="profile">Profile</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="basic_details">Basic Details</string>
     <string name="help">Help</string>
     <string name="sign_out">Sign out</string>
     <string name="attendance_marked_successfully">Attendance marked successfully</string>
@@ -120,21 +122,11 @@
     <!--Profile Details-->
     <string name="passport_no">Passport Number</string>
     <string name="date_of_birth">Date of Birth</string>
-    <string name="nationality">Nationality</string>
-    <string name="national_id">National Id</string>
-    <string name="address_details">Address Details</string>
     <string name="building_no_and_street_name">Building No &amp; Street Name</string>
     <string name="floor_no">Floor Number</string>
-    <string name="country">Country</string>
-    <string name="district">District</string>
-    <string name="city">City</string>
-    <string name="zipcode">Zipcode</string>
-    <string name="other_contact_details">Other Contact Details</string>
 
     <string name="back">Back</string>
-    <string name="vaccination_details">Vaccination Details</string>
     <string name="vaccination">Vaccination</string>
-    <string name="choose">Choose</string>
     <string name="done">Done</string>
     <string name="cancel">Cancel</string>
     <string name="submit">Submit</string>
@@ -164,4 +156,43 @@
     <string name="something_went_wrong">Something went wrong</string>
     <string name="server_error">Server Error</string>
     <string name="something_times">Time out !</string>
+
+    <!--Profile Details Screen-->
+    <string name="passport_number">Passport Number</string>
+    <string name="dateofbirth">Date of Birth</string>
+    <string name="nationality">Nationality</string>
+    <string name="national_id">National Id</string>
+    <string name="address_details">Address Details</string>
+    <string name="building_no">Building No &amp; Street Name</string>
+    <string name="floor_number">Floor Number</string>
+    <string name="country">Country</string>
+    <string name="district">District</string>
+    <string name="city">City</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="other_contact_details">Other Contact Details</string>
+    <string name="office_number">Office Number</string>
+
+    <!--Vaccination Details-->
+    <string name="vaccination_details">Vaccination Details</string>
+    <string name="Vaccination">Vaccination</string>
+    <string name="covid_19">Covid-19</string>
+    <string name="choose">Choose</string>
+    <string name="yellow_fever">Yellow Fever (Optional)</string>
+
+    <string name="add_new_documents">Add New Documents</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="browse">Browse</string>
+
+    <string name="your_profile_under_review">Your Profile is under Review, Kindly Wait for Confirmation Mail</string>
+    <string name="application_status">Application Status</string>
+    <string name="pending">Pending</string>
+    <string name="validation_pending">Validation Pending</string>
+    <string name="till_now">Till now</string>
+    <string name="profile_details_submitted_successfully">Profile Details Submitted Successfully</string>
+    <string name="overview">Overview</string>
+    <string name="registration_successful">Registration Successful !</string>
+    <string name="invalid">Invalid</string>
+    <string name="resident_national_id">Resident / National id</string>
+    <string name="edit_txt">Edit</string>
 </resources>
+
