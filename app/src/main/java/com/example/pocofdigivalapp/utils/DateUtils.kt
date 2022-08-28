@@ -77,8 +77,8 @@ fun String?.capitalizeFirstLetter(): String {
     return if (TextUtils.isEmpty(this)) {
         ""
     } else {
-        this?.substring(0, 1)?.toUpperCase(Locale.getDefault()) + this?.substring(1)
-            ?.toLowerCase(Locale.getDefault())
+        this?.substring(0, 1)?.uppercase(Locale.getDefault()) + this?.substring(1)
+            ?.lowercase(Locale.getDefault())
     }
 }
 

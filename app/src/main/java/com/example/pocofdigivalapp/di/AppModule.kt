@@ -1,10 +1,12 @@
 package com.example.pocofdigivalapp.di
 
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.pocofdigivalapp.api.Rest
 import com.example.pocofdigivalapp.forgotpassword.ForgotPasswordViewModel
 import com.example.pocofdigivalapp.forgotpassword.ForgotPasswordViewModelLatest
 import com.example.pocofdigivalapp.mycourse.CourseListViewModel
-import com.example.pocofdigivalapp.profile.ProfileScreenViewModel
+import com.example.pocofdigivalapp.profile.basicdetails.ProfileScreenViewModel
+import com.example.pocofdigivalapp.profile.profiledetailsscreen.ProfileDetailsScreenViewModel
 import com.example.pocofdigivalapp.repository.*
 import com.example.pocofdigivalapp.signup.SignUpViewModel
 import com.example.pocofdigivalapp.signup.SignUpViewModelLatest
@@ -21,6 +23,7 @@ object AppModule {
         viewModel { StudentCourseListViewModel(get()) }
         viewModel { ProfileScreenViewModel(get()) }
         viewModel { SignUpViewModelLatest(get()) }
+        viewModel { ProfileDetailsScreenViewModel() }
         viewModel { ForgotPasswordViewModelLatest(get()) }
     }
 

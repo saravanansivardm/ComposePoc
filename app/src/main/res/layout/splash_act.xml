@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/digi_header_bg">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/uiIvSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/uiSplashProgress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_logo"/>
+
+    <ProgressBar
+        android:id="@+id/uiSplashProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:indeterminateTintMode="src_atop"
+        android:max="100"
+        android:minWidth="200dp"
+        android:mirrorForRtl="true"
+        android:progress="30"
+        android:progressDrawable="@drawable/bg_horizontal_progress"
+        android:progressTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/uiIvSplash"
+        app:layout_constraintStart_toStartOf="@+id/uiIvSplash"
+        app:layout_constraintTop_toBottomOf="@+id/uiIvSplash"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

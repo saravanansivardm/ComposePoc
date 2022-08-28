@@ -3,7 +3,6 @@ package com.example.pocofdigivalapp
 import com.example.pocofdigivalapp.data.course.CourseItem
 import com.example.pocofdigivalapp.data.institutionCalendar.InstitutionCalendarList
 
-
 sealed class CourseListState {
     object Ideal : CourseListState()
     object Loading : CourseListState()
