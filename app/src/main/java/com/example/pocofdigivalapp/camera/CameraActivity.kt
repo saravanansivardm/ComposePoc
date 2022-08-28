@@ -96,6 +96,7 @@ class CameraActivity : AppCompatActivity() {
                 path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA))
             }
             cursor.close()
+
         }
         return path!!
     }
