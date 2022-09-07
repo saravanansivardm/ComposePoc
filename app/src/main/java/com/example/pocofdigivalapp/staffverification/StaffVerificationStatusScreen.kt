@@ -1,21 +1,20 @@
 package com.example.pocofdigivalapp.staffverification
 
 import android.annotation.SuppressLint
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.gestures.Orientation
-import androidx.compose.foundation.gestures.scrollable
+import android.util.Log
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -36,136 +35,142 @@ import com.example.pocofdigivalapp.R
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun StaffVerificationStatusScreen() {
-    val scrollState = rememberScrollState()
-    val context = LocalContext.current
-
-    Scaffold(
-        modifier = Modifier.fillMaxSize().scrollable(
-            state = scrollState,
-            orientation = Orientation.Vertical
-        ),
-        backgroundColor = colorResource(R.color.verification_bg),
-    ) {
-        Column(
-            modifier = Modifier
-                .fillMaxSize(),
-            verticalArrangement = Arrangement.Top,
-        ) {
-            ToolBar(
-                isIconVisible = false, title = stringResource(id = R.string.staff_verification),
-            )
-            Card(
+    Scaffold(backgroundColor = colorResource(R.color.verification_bg)) {
+        BoxWithConstraints {
+            Box(
                 modifier = Modifier
-                    .padding(top = 16.dp, end = 16.dp, start = 16.dp)
                     .fillMaxWidth()
-                    .height(28.dp),
-                shape = RoundedCornerShape(8.dp),
-                backgroundColor = colorResource(id = R.color.card_bg),
-                elevation = 1.dp
-            ) {
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Box(
-                        modifier = Modifier
-                            .padding(start = 12.dp)
-                    ) {
-                    Icon(
-                        imageVector = Icons.Default.Info,
-                        contentDescription = "info",
-                        modifier = Modifier
-                            .height(16.dp)
-                            .width(16.dp),
-                        tint = colorResource(R.color.card_txt_color),
-                    )}
-                    Text(
-                        text = stringResource(id = R.string.your_profile_under_review),
-                        color = colorResource(R.color.card_txt_color),
-                        fontSize = 11.sp,
-                        textAlign = TextAlign.Start,
-                        fontFamily = FontFamily(Font(R.font.roboto_medium)),modifier = Modifier
-                            .padding(start = 8.dp)
-
-                    )
-                }
-
-            }
-            Card(
-                modifier = Modifier
-                    .padding(top = 8.dp, end = 16.dp, start = 16.dp)
-                    .fillMaxWidth()
-                    .wrapContentHeight(),
-                shape = RoundedCornerShape(5.dp),
-                backgroundColor = Color.White,
-                elevation = 1.dp
+                    .fillMaxHeight()
+                    .background(colorResource(id = R.color.grey_200))
+                    .verticalScroll(rememberScrollState())
             ) {
                 Column {
-                    Column(
+                    ToolBar(
+                        isIconVisible = false,
+                        title = stringResource(id = R.string.staff_verification),
+                    )
+                    Card(
                         modifier = Modifier
-                            .padding(top = 24.dp, bottom = 22.dp)
+                            .padding(top = 16.dp, end = 16.dp, start = 16.dp)
+                            .fillMaxWidth()
+                            .height(28.dp),
+                        shape = RoundedCornerShape(8.dp),
+                        backgroundColor = colorResource(id = R.color.card_bg),
+                        elevation = 1.dp
                     ) {
-                        Text(
-                            text = stringResource(id = R.string.application_status),
-                            color = colorResource(R.color.hint_color),
-                            fontSize = 16.sp,
-                            textAlign = TextAlign.Start,
-                            fontFamily = FontFamily(Font(R.font.roboto_medium)),
-                            modifier = Modifier
-                                .wrapContentHeight()
-                                .padding(top = 1.dp, start = 16.dp)
-                        )
-                        ApplicationStatusFun()
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                        ) {
+                            Box(
+                                modifier = Modifier
+                                    .padding(start = 12.dp)
+                            ) {
+                                Icon(
+                                    imageVector = Icons.Default.Info,
+                                    contentDescription = "info",
+                                    modifier = Modifier
+                                        .height(16.dp)
+                                        .width(16.dp),
+                                    tint = colorResource(R.color.card_txt_color),
+                                )
+                            }
+                            Text(
+                                text = stringResource(id = R.string.your_profile_under_review),
+                                color = colorResource(R.color.card_txt_color),
+                                fontSize = 11.sp,
+                                textAlign = TextAlign.Start,
+                                fontFamily = FontFamily(Font(R.font.roboto_medium)),
+                                modifier = Modifier
+                                    .padding(start = 8.dp)
+
+                            )
+                        }
+
                     }
+                    Card(
+                        modifier = Modifier
+                            .padding(top = 8.dp, end = 16.dp, start = 16.dp)
+                            .fillMaxWidth()
+                            .wrapContentHeight(),
+                        shape = RoundedCornerShape(5.dp),
+                        backgroundColor = Color.White,
+                        elevation = 1.dp
+                    ) {
+                        Column {
+                            Column(
+                                modifier = Modifier
+                                    .padding(top = 24.dp, bottom = 22.dp)
+                            ) {
+                                Text(
+                                    text = stringResource(id = R.string.application_status),
+                                    color = colorResource(R.color.hint_color),
+                                    fontSize = 16.sp,
+                                    textAlign = TextAlign.Start,
+                                    fontFamily = FontFamily(Font(R.font.roboto_medium)),
+                                    modifier = Modifier
+                                        .wrapContentHeight()
+                                        .padding(top = 1.dp, start = 16.dp)
+                                )
+                                ApplicationStatusFun()
+                            }
+                        }
+                    }
+
+                    Text(
+                        text = stringResource(id = R.string.overview),
+                        color = colorResource(id = R.color.box_text_color),
+                        textAlign = TextAlign.Start,
+                        fontSize = 14.sp,
+                        fontFamily = FontFamily(Font(R.font.roboto_medium)),
+                        modifier = Modifier
+                            .padding(top = 24.dp, start = 16.dp)
+                    )
+                    OverViewList()
+
+//                    DocumentScreen()
+                    BioMetricScreen()
+//                    BasicDetailsScreen()
                 }
             }
+        }
+    }
+}
 
+@Composable
+fun BioMetricScreen() {
+    Card(
+        modifier = Modifier
+            .padding(top = 16.dp, end = 16.dp, start = 16.dp)
+            .fillMaxWidth()
+            .wrapContentHeight(),
+        shape = RoundedCornerShape(4.dp),
+        backgroundColor = colorResource(id = R.color.white),
+        elevation = 1.dp
+    ) {
+        Column(
+            horizontalAlignment = Alignment.Start,
+            modifier = Modifier.padding(top = 16.dp, bottom = 16.dp),
+        ) {
             Text(
-                text = stringResource(id = R.string.overview),
-                color = colorResource(id = R.color.box_text_color),
-                textAlign = TextAlign.Start,
+                text = stringResource(id = R.string.biometric),
+                color = colorResource(R.color.box_text_color),
                 fontSize = 14.sp,
+                textAlign = TextAlign.Start,
                 fontFamily = FontFamily(Font(R.font.roboto_medium)),
                 modifier = Modifier
-                    .padding(top = 24.dp, start = 16.dp)
+                    .wrapContentHeight()
+                    .padding(start = 16.dp)
             )
-            OverViewList()
-
-            DocumentScreen()
-            /*Card(
+            Text(
+                text = stringResource(id = R.string.registration_successful),
+                color = colorResource(R.color.green_color_dark),
+                fontSize = 14.sp,
+                textAlign = TextAlign.Start,
+                fontFamily = FontFamily(Font(R.font.roboto_medium)),
                 modifier = Modifier
-                    .padding(top = 16.dp, end = 16.dp, start = 16.dp)
-                    .fillMaxWidth()
-                    .wrapContentHeight(),
-                shape = RoundedCornerShape(4.dp),
-                backgroundColor = colorResource(id = R.color.white),
-                elevation = 1.dp
-            ) {
-                Column(
-                    horizontalAlignment = Alignment.Start,
-                    modifier = Modifier.padding(top = 16.dp, bottom = 16.dp),
-                ) {
-                    Text(
-                        text = stringResource(id = R.string.biometric),
-                        color = colorResource(R.color.box_text_color),
-                        fontSize = 14.sp,
-                        textAlign = TextAlign.Start,
-                        fontFamily = FontFamily(Font(R.font.roboto_medium)),
-                        modifier = Modifier
-                            .wrapContentHeight()
-                            .padding(start = 16.dp)
-                    )
-                    Text(
-                        text = stringResource(id = R.string.registration_successful),
-                        color = colorResource(R.color.green_color_dark),
-                        fontSize = 14.sp,
-                        textAlign = TextAlign.Start,
-                        fontFamily = FontFamily(Font(R.font.roboto_medium)),
-                        modifier = Modifier
-                            .wrapContentHeight()
-                            .padding(top = 8.dp, start = 16.dp)
-                    )
-                }
-            }*/
+                    .wrapContentHeight()
+                    .padding(top = 8.dp, start = 16.dp)
+            )
         }
     }
 }
@@ -251,7 +256,7 @@ fun ApplicationStatusListItems(value: String, onClick: () -> Unit, isSelected: B
             Column(
                 horizontalAlignment = Alignment.Start,
             ) {
-                Row(){
+                Row() {
                     Text(
                         text = stringResource(id = R.string.validation_pending),
                         color = colorResource(R.color.box_text_color),
@@ -264,7 +269,7 @@ fun ApplicationStatusListItems(value: String, onClick: () -> Unit, isSelected: B
                     )
                     Box(
                         modifier = Modifier
-                            .padding(start = 12.dp,top=8.dp)
+                            .padding(start = 12.dp, top = 8.dp)
                     ) {
                         Icon(
                             imageVector = Icons.Default.Info,
@@ -273,7 +278,8 @@ fun ApplicationStatusListItems(value: String, onClick: () -> Unit, isSelected: B
                                 .height(18.dp)
                                 .width(18.dp),
                             tint = colorResource(R.color.black),
-                        )}
+                        )
+                    }
                 }
                 Text(
                     text = stringResource(id = R.string.till_now),
@@ -394,12 +400,13 @@ private fun OverViewListItems(
 ) {
     val backgroundColor = if (isSelected) Color.White else Color.White.copy(alpha = 0.35f)
     val textColor = if (isSelected) colorResource(id = R.color.tab_selected_color) else Color.Black
+
     Box(
         modifier = Modifier
             .height(30.dp)
             .clip(shape = RoundedCornerShape(15.dp))
             .background(color = backgroundColor)
-            .clickable(enabled = !isSelected, onClick = onClick)
+            .clickable(onClick = {})
             .padding(horizontal = 15.dp),
         contentAlignment = Alignment.Center,
     ) {
