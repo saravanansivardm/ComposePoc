@@ -160,6 +160,7 @@
         <entry key="../../../../layout/compose-model-1661494737914.xml" value="0.15396458814472672" />
         <entry key="../../../../layout/compose-model-1661697056082.xml" value="0.15396458814472672" />
         <entry key="../../../../layout/compose-model-1661697225987.xml" value="0.16934121621621623" />
+        <entry key="../../../../layout/compose-model-1661771164694.xml" value="0.1" />
         <entry key="../../Android/Sdk/platforms/android-32/data/res/drawable/progress_indeterminate_horizontal.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bg_colloapsing_toolbar.xml" value="0.19" />
         <entry key="app/src/main/res/drawable/bg_horizontal_progress.xml" value="0.1575" />
@@ -190,6 +191,7 @@
         <entry key="app/src/main/res/drawable/ic_recent_document.xml" value="0.2005" />
         <entry key="app/src/main/res/drawable/ic_student_group_chat.xml" value="0.2005" />
         <entry key="app/src/main/res/drawable/ic_timeline_dashboard.xml" value="0.2005" />
+        <entry key="app/src/main/res/drawable/ic_upload.xml" value="0.188" />
         <entry key="app/src/main/res/drawable/logo_bg.xml" value="0.1575" />
         <entry key="app/src/main/res/drawable/merge_type.xml" value="0.2005" />
         <entry key="app/src/main/res/drawable/pdf_icon.xml" value="0.188" />

@@ -47,4 +47,8 @@
     <color name="green_color_dark">#16A34A</color>
     <color name="grey_box_bg">#F9FAFB</color>
     <color name="dark_red">#FF2222</color>
+    <color name="colorGray">#9b9b9b</color>
+
+    <color name="small_box_bg">#F9FAFB</color>
+    <color name="upload_icon_color">#147AFC</color>
 </resources>

@@ -194,5 +194,12 @@
     <string name="invalid">Invalid</string>
     <string name="resident_national_id">Resident / National id</string>
     <string name="edit_txt">Edit</string>
+
+    <!--Document-->
+    <string name="accepted_formats_with_size">Accepted formats (JPG, PNG) - Upload file max size (6mb)</string>
+    <string name="id_proof">ID Proof</string>
+    <string name="max_8mb">Max  8 MB</string>
+    <string name="upload_postal_address">Upload Postal Address</string>
+    <string name="document">Document</string>
 </resources>
 
